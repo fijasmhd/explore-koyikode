@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+}
+.cls1{
+    height: 100vh;
+    width: 100%;
+    background: url(images/bgimage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+.cls1 h1{
+    margin: 0;
+    color: rgb(208, 244, 5);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;    
+    text-align: center;
+    width: 100%;
+    font-size: 8vw;
+}
+.cls1 h2{
+    margin: 0;
+    color: rgb(208, 244, 5);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;    
+    text-align: center;
+    width: 100%;
+}
+.cls2{
+    background: #b8d01c;
+    display: flex;
+}
+.places-to-visit,.places-to-eat {
+    padding: 20px 20px;
+    text-align: center;
+    background: #298150;
+
+}
+.spot-title h2,.food-spots-title h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.spots,.food-spots {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.spots > div,.food-spots > div {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.spots > div:hover,.food-spots > div:hover {
+    transform: translateY(-10px);
+}
+
+
+.spots img,.food-spots img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.spots h3,.food-spots h3 {
+    margin: 10px;
+}
+
+.spots p ,.food-spots p{
+    margin: 10px;
+    font-size: 14px;
+}
+
+.spots a,.food-spots a {
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+
+
+
+
