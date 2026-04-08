@@ -31,7 +31,7 @@ body{
 .places{
     padding: 20px 20px;
     text-align: center;
-    background:#417a41;
+    background:rgb(215, 220, 135);
 }
 .spot-title h2 {
     margin-bottom: 30px;
@@ -117,9 +117,13 @@ body{
     flex-direction: column;
 }
 
-.more-spots > div:hover,.more-foodspots > div :hover{
+.more-spots > div:hover{
     transform: translateY(-10px);
 }
+.more-foodspots > div:hover{
+    transform: translateY(-10px);
+}
+
 
 .more-spots img,.more-foodspots img{
     width: 100%;
@@ -158,4 +162,8 @@ body{
 
 .view-more-btn:hover {
     background: #328131;
+}
+
+.footer p{
+    text-align: center;
 }
