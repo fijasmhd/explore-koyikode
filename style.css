@@ -28,67 +28,134 @@ body{
     text-align: center;
     width: 100%;
 }
-.cls2{
-    background: #b8d01c;
-    display: flex;
-}
-.places-to-visit,.places-to-eat {
+.places{
     padding: 20px 20px;
     text-align: center;
-    background: #298150;
-
+    background:#417a41;
 }
-.spot-title h2,.food-spots-title h2 {
+.spot-title h2 {
     margin-bottom: 30px;
     font-size: 2rem;
 }
-.spots,.food-spots {
+.spots{
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.spots > div,.food-spots > div {
+.spots > div{
     width: 300px;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     text-align: left;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
-.spots > div:hover,.food-spots > div:hover {
+.spots > div:hover{
     transform: translateY(-10px);
 }
 
 
-.spots img,.food-spots img {
+.spots img{
     width: 100%;
     height: 180px;
     object-fit: cover;
 }
 
 
-.spots h3,.food-spots h3 {
+.spots h3{
     margin: 10px;
 }
 
-.spots p ,.food-spots p{
+.spots p{
     margin: 10px;
     font-size: 14px;
 }
 
-.spots a,.food-spots a {
+.spots a{
     display: block;
     margin: 10px;
     text-decoration: none;
     color: green;
     font-weight: bold;
+    margin-top: auto;
 }
 
 
 
 
+#toggle-spots,#toggle-foodspots {
+    display: none;
+}
 
+.more-spots,.more-foodspots {
+    display: none;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#toggle-spots:checked ~ .more-spots,#toggle-foodspots:checked ~ .more-foodspots {
+    display: flex;
+}
+
+.more-spots > div,.more-foodspots > div {
+    width: 300px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: left;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.more-spots > div:hover,.more-foodspots > div :hover{
+    transform: translateY(-10px);
+}
+
+.more-spots img,.more-foodspots img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.more-spots h3,.more-foodspots h3{
+    margin: 10px;
+}
+
+.more-spots p,.more-foodspots p{
+    margin: 10px;
+    font-size: 14px;
+}
+
+.more-spots a,.more-foodspots a{
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.view-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgb(129, 201, 142);
+    color: black;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-more-btn:hover {
+    background: #328131;
+}
